@@ -1,5 +1,5 @@
 # LeetCode-Problems
-This is My (LeetCode)[https://leetcode-cn.com/u/jacky_0420/] Problem-Set.
+This is My [LeetCode](https://leetcode-cn.com/u/jacky_0420/) Problem-Set.
 
 It records my learning track of leetcode.
 
