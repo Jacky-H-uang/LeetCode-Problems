@@ -37,6 +37,7 @@ public:
                 ans[evenIndex] = A[i];
                 evenIndex += 2;
             }
+            // 奇数的时候
             else
             {
                 ans[oddIndex] = A[i];
