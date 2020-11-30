@@ -34,7 +34,7 @@ package LeetCode.Z_Competition.NO217;
 
 import java.util.*;
 
-public class Solution {
+public class leetcode_1675 {
     public int minimumDeviation(int[] nums) {
         TreeSet<Integer> tS = new TreeSet<>();
         for(int x : nums) {
