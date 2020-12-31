@@ -29,14 +29,8 @@ using namespace std;
 
 bool cmp(vector<int>& a,vector<int>& b)
 {
-	if(a[1] == b[1])
-	{
-		return a[0] < b[0];
-	}
-	else
-	{
-        return a[1] < b[1];
-	}
+	if(a[1] == b[1])		return a[0] < b[0];
+	else					return a[1] < b[1];
 }
 class Solution {
 public:
@@ -45,24 +39,15 @@ public:
     // 排序贪心
     int eraseOverlapIntervals(vector<vector<int>>& intervals) 
     {
-        if(intervals.size() <= 1)
-        {
-            return 0;
-        }
+        if(intervals.size() <= 1)			return 0;
     	int count = 0;
     	int len = intervals.size();
     	sort(intervals.begin(),intervals.end(),cmp);
     	int r = intervals[0][1];
-       	for(int i=1;i<len;i++)
+       	for(int i = 1; i < len; i++)
        	{
-       		if(intervals[i][0] < r)
-       		{
-       			count++;
-       		}
-       		else
-       		{
-       			r = intervals[i][1];
-       		}
+       		if(intervals[i][0] < r)		count++;
+       		else						r = intervals[i][1];
        	}
     	return count;
     }
