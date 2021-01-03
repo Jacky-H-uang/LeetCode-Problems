@@ -73,22 +73,3 @@ public:
         return head;
     }
 };
-
-int main()
-{	ListNode* m = new ListNode(2);
-    m->next = new ListNode(1);
-    //m->next->next = new ListNode(1);
-    // m->next = new ListNode(4);
-    // m->next->next = new ListNode(3);
-    // m->next->next->next = new ListNode(2);
-    // m->next->next->next->next = new ListNode(5);
-    // m->next->next->next->next->next = new ListNode(2);
-    Solution s;
-    ListNode* r = s.partition(m,1);
-    for (; r != 0; r = r->next)
-    {
-        cout << r->val << endl;
-    }
-    system("pause");
-    return 0;
-}
