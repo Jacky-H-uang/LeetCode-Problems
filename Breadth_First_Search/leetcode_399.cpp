@@ -97,7 +97,7 @@ public:
             memo[make_pair(st[equations[i][1]] , st[equations[i][0]])] = 1.0 / values[i];
         }
 
-        // 然后开始 dfs
+        // 然后开始 bfs
         for(auto& q : queries) {
             double aux = -1.0;
             // 先判断在不在 st 表里面
