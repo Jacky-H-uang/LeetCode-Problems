@@ -70,12 +70,11 @@ public:
                 }
             }
         }
-        // 0 1     2 3
-        // 0 2  1 3  1 0  3 2
+
         return -1.0;
     }
 
-    // 可以写一个 UF 但是我不会 , 所以想到用普通的 DFS
+    // 可以写一个 UF 但是我不会 , 所以想到用普通的 BFS
     vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {
         // 先哈希映射 , 其实可以采用 26 个字母来映射但是由于存在多字母那么则需要其他映射规则
         vector<double> ans;
